@@ -1,0 +1,42 @@
+body {
+    background-color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .navbar-custom {
+    background-color: #000;
+  }
+
+  .log-In {
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+  input {
+    border-radius: 5px;
+    width: 330px;
+  }
+
+  .restablecerContraseña {
+    color: grey;
+  }
+
+  .btn {
+    background-color: #1FA44E;
+    border-radius: 20px;
+    text-align: center;
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  .btn-primary:hover{
+    background-color: #1FA44E;
+  }
+
+  img {
+    max-width: 45%;
+    display: block;
+  }
