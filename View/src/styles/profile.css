@@ -1,58 +1,78 @@
- body {
-      background-color: #f5f8f7;
-    }
+body {
+  background-color: #f5f8f7;
+}
 
-    .navbar-custom {
-      background-color: #000;
-    }
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
 
-    .profile-container {
-      padding: 40px;
-      background-color: #eef2f1;
-    }
+.navbar-custom {
+  background-color: #000;
+}
 
-    .form-control:disabled {
-      background-color: #dde3e2;
-    }
+.profile-container {
+  padding: 40px;
+  background-color: #eef2f1;
+}
 
-    .profile-img {
-      width: 100px;
-      border-radius: 50%;
-      background-color: #bdc5c4;
-    }
+.form-control:disabled {
+  background-color: #dde3e2;
+}
 
-    .btn-save {
-      background-color: #28a745;
-      color: white;
-      font-weight: bold;
-      border-radius: 20px;
-      padding: 8px 30px;
-      border: none;
-    }
+.profile-img {
+  width: 100px;
+  border-radius: 50%;
+  background-color: #bdc5c4;
+}
 
-    .footer {
-      background-color: #000;
-      color: white;
-      padding: 10px;
-      text-align: center;
-    }
+.btn-save {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 8px 30px;
+  border: none;
+}
 
-    .icon-btn {
-      border: none;
-      background: none;
-    }
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
 
-    .input-group-text {
-      background-color: #dde3e2;
-    }
+.icon-btn {
+  border: none;
+  background: none;
+}
 
-    .dropdown-btn, .upload-btn {
-      width: 100%;
-      background-color: #dde3e2;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 8px;
-      margin-bottom: 10px;
-      text-align: left;
-      color: #555;
-    }
+.input-group-text {
+  background-color: #dde3e2;
+}
+
+.dropdown-btn,
+.upload-btn {
+  width: 100%;
+  background-color: #dde3e2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #555;
+}
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+#password-rules li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.list-unstyled {
+  text-align: start;
+}

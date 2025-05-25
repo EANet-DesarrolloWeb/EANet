@@ -23,8 +23,8 @@
         <div class="col-md-3">
           <div class="sidebar text-center">
             <img src="../../assets/img/perfil.png" alt="Perfil" class="profile-img mb-2">
-            <h5>Pepito Perez</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h5 id="nombreUsuario"></h5>
+            <p id="acerca_de_ti"></p>
             <h6 class="fw-bold">Reconocimientos</h6>
             <div class="d-flex justify-content-center gap-2">
               <img src="../../assets/img/thumbs.png" width="30" />
@@ -50,8 +50,7 @@
             </div>
             <div class="card-body">
               <img src="../../assets/img/post.png" class="card-img-top" alt="Post">
-              <div class="post-text text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <div class="post-text text-center" id="acerca_de_ti_center">
               </div>
               <div class="icons">
                 <i class="bi bi-star"></i>
@@ -77,6 +76,8 @@
   </div>
 
   <script src="../scripts/include.js"></script>
+  <script src="../scripts/userData.js"></script>
+
 </body>
 
 </html>

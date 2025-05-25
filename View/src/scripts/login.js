@@ -1,91 +1,44 @@
-const usuario = {
-  "estudiante@universidadean.edu.co": "ean1234",
-};
+document.addEventListener("DOMContentLoaded", function () {
+  const params = new URLSearchParams(window.location.search);
+  if (params.has("error")) {
+    alert("Correo o contraseña incorrectos. Intente de nuevo.");
+  }
+});
 
-document
-  .getElementById("inicioSesion")
-  .addEventListener("submit", function (e) {
-    const email = document.getElementById("email").value;
-    const contraseña = document.getElementById("contraseña").value;
-    e.preventDefault();
+document.getElementById("crearCuenta").addEventListener("click", function (e) {
+  e.preventDefault();
+  window.location.href = "../pages/createaccount.php";
+});
 
-    if (usuario[email] && usuario[email] === contraseña) {
-      window.location.href = "../pages/dashboard.html";
-    } else {
-      alert("Email o contraseña incorrectos. Ingrese nuevamente los datos");
-    }
-  });
-
+// Botón "¿Olvidaste tu contraseña?"
 document
   .getElementById("restablecerContraseña")
-  .addEventListener("click", function (e) {
+  .addEventListener("click", async function (e) {
     e.preventDefault();
-    if (usuario[email.value]) {
-      alert("Se ha enviado un enlace de restablecimiento a " + email.value);
-    } else if (email.value == "") {
-      alert("Ingrese un correo");
-    } else {
-      alert("El email no esta registrado.");
+
+    const email = document.getElementById("email").value.trim();
+
+    if (email === "") {
+      alert("Ingrese un correo electrónico");
+      return;
+    }
+
+    try {
+      const res = await fetch(
+        `../../../Controller/getInfoUser.php?action=validarCorreo&correo=${encodeURIComponent(
+          email
+        )}`
+      );
+      const result = await res.json();
+
+      if (result.existe) {
+        alert("Se ha enviado un enlace de restablecimiento a " + email);
+        // Aquí podrías redirigir o activar el flujo de recuperación real si lo implementas
+      } else {
+        alert("Usuario no existente. Por favor cree una cuenta.");
+      }
+    } catch (error) {
+      console.error("Error al validar correo:", error);
+      alert("Error al verificar el correo.");
     }
   });
-
-  document
-  .getElementById("crearCuenta")
-  .addEventListener("click", function (e) {
-    e.preventDefault();
-   
-      window.location.href = "../pages/createaccount.html";
-  });
-
-// // Import the functions you need from the SDKs you need
-// import { initializeApp } from "firebase/app";
-// import {getAuth, sendPasswordResetEmail} from "firebase/auth"
-
-// // TODO: Add SDKs for Firebase products that you want to use
-// // https://firebase.google.com/docs/web/setup#available-libraries
-
-// // Your web app's Firebase configuration
-// // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-// const firebaseConfig = {
-//   apiKey: "AIzaSyDuX7Fd5cl7irpYEtWgL_wCS7TArs0T-ko",
-//   authDomain: "eanet-ba7cb.firebaseapp.com",
-//   projectId: "eanet-ba7cb",
-//   storageBucket: "eanet-ba7cb.firebasestorage.app",
-//   messagingSenderId: "683086083205",
-//   appId: "1:683086083205:web:8d738efcb00e0ffd3c65ec",
-// };
-
-// // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
-// const auth = getAuth(app);
-
-// document.getElementById('inicioSesion').addEventListener('submit', function (e) {
-//     e.preventDefault();
-
-//     const email = document.getElementById('email').value;
-//     const contraseña = document.getElementById('contraseña').value;
-
-//     signInWithEmailAndPassword(auth, email, contraseña)
-//      .then((userCredential) => {
-//      const user = userCredential.user;
-//      window.location.href = "../pages/dashboard.html";
-//      })
-//      .catch((error) => {
-//         const errorCode = error.code;
-//         const errorMessage = error.message;
-//      });
-// })
-
-// document.getElementById('restablecerContraseña').addEventListener('submit', function (e) {
-//     e.preventDefault();
-
-//     sendPasswordResetEmail(auth, email)
-//     .then(() => {
-//         document.getElementById('mensaje').innerText = 'Se ha enviado un enlacede restablecimiento a ' + email;
-//     })
-//     .catch((error) => {
-//         const error = error.code;
-//         const errorMessage = error.message;
-//         document.getElementById('mensaje').innerText = errorMessage;
-//     });
-// });
