@@ -21,6 +21,9 @@
       <div class="row gy-3">
         <div class="col-md-3">
           <div class="sidebar text-center">
+            <img src="../../assets/img/perfil.png" alt="Perfil" class="profile-img mb-2">
+            <h5 id="nombreUsuario"></h5>
+            <p id="acerca_de_ti"></p>
             <img src="../../assets/img/perfil.png" alt="Foto de perfil" class="profile-img mb-2">
             <h5>Pepito Perez</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -48,6 +51,8 @@
               <span>Ubicación - Hora</span>
             </div>
             <div class="card-body">
+              <img src="../../assets/img/post.png" class="card-img-top" alt="Post">
+              <div class="post-text text-center" id="acerca_de_ti_center">
               <img src="../../assets/img/post.png" class="card-img-top" alt="Imagen de publicación">
               <div class="post-text text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -76,6 +81,8 @@
   </div>
 
   <script src="../scripts/include.js"></script>
+  <script src="../scripts/userData.js"></script>
+
 </body>
 
 </html>
