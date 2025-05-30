@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+require_once("../../../Model/contador.php");
+$visitas = Contador::incrementarYObtener();
+?><!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -13,7 +16,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body data-visitas="<?php echo $visitas; ?>">
   <div class="page-wrapper d-flex flex-column min-vh-100">
     <div id="navbar"></div>
 
