@@ -1,3 +1,8 @@
+<?php
+require_once("../../../Model/contador.php");
+$visitas = Contador::incrementarYObtener();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,7 +17,7 @@
   <link rel="icon" href="../../assets/img/logo.png" type="image/png">
 </head>
 
-<body>
+<body data-visitas="<?php echo $visitas; ?>">
   <div class="page-wrapper d-flex flex-column min-vh-100">
     <div id="navbar"></div>
 
@@ -20,6 +25,7 @@
       <section class="log-In">
         <div>
           <h1 class="text-center">¡Hola Eanista!</h1>
+
 
           <?php if (isset($_GET['error'])): ?>
             <p class="text-danger text-center">Correo o contraseña incorrectos</p>
@@ -41,7 +47,7 @@
         </div>
         <div>
           <a href="https://es.vecteezy.com/png-gratis/networking">
-            <img src="../../assets/img/networking.png" alt="Networking PNGs por Vecteezy"> 
+            <img src="../../assets/img/networking.png" alt="Networking PNGs por Vecteezy">
           </a>
         </div>
       </section>

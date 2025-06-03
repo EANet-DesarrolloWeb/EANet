@@ -1,34 +1,46 @@
 document.addEventListener("DOMContentLoaded", () => {
   const currentPage = window.location.pathname.split("/").pop();
-  const showUserIcons = !["login.php", "createaccount.php"].includes(currentPage);
+  const showUserIcons = !["login.php", "createaccount.php"].includes(
+    currentPage
+  );
+
+  const visitas = document.body.dataset.visitas || null; 
 
   document.getElementById("navbar").innerHTML = `
     <nav class="navbar navbar-dark navbar-custom p-3 d-flex justify-content-between">
-      <a href="${!showUserIcons ? './login.php' : './dashboard.php'}" class="text-decoration-none">
+      <a href="${
+        !showUserIcons ? "./login.php" : "./dashboard.php"
+      }" class="text-decoration-none">
         <div class="navbar-brand d-flex align-items-center gap-2">
           <img src="../../assets/img/logo.png" alt="Logo" height="30">
           <span class="text-white fw-bold">EANet</span>
         </div>
       </a>
-      ${
-        showUserIcons
-          ? `
-        <div class="d-flex align-items-center gap-3">
-          <i class="bi bi-bell-fill fs-4 text-white"></i>
-          <div class="dropdown">
-            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-person-circle fs-4"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end text-small" aria-labelledby="dropdownUser">
-              <li><a class="dropdown-item" href="profile.php">Perfil</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" id="cerrarSesion" href="#">Cerrar sesión</a></li>
-            </ul>
-          </div>
-        </div>
-      `
-          : ""
-      }
+  <div class="d-flex align-items-center gap-3">
+  ${
+    visitas
+      ? `<span class="text-white me-3">Visitas al sitio: <strong>${visitas}</strong></span>`
+      : ""
+  }
+
+  ${
+    showUserIcons
+      ? `
+      <i class="bi bi-bell-fill fs-4 text-white"></i>
+      <div class="dropdown">
+        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-person-circle fs-4"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end text-small" aria-labelledby="dropdownUser">
+          <li><a class="dropdown-item" href="profile.php">Perfil</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" id="cerrarSesion" href="#">Cerrar sesión</a></li>
+        </ul>
+      </div>
+    `
+      : ""
+  }
+</div>
     </nav>
   `;
 

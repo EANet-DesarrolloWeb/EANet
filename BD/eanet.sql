@@ -104,3 +104,10 @@ ALTER TABLE `usuarios`
   ADD CONSTRAINT `fk_rol_id` FOREIGN KEY (`rol_id`) REFERENCES `roles` (`id`);
 COMMIT;
 
+CREATE TABLE contador_visitas (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    visitas INT NOT NULL DEFAULT 0
+);
+
+INSERT INTO contador_visitas (visitas) VALUES (0);
+

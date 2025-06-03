@@ -6,5 +6,8 @@
     <title>EANET</title>
 </head>
 <body>
+    <?php 
+    header("location: ./View/src/pages/login.php")
+    ?>
 </body>
 </html>
