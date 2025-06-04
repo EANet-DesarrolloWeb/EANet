@@ -1,4 +1,4 @@
--- DROP database EANET;
+DROP database if exists EANET;
 CREATE DATABASE EANET;
 
 USE EANET;

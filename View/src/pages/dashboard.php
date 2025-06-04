@@ -67,6 +67,7 @@
             <img src="../../assets/img/articulos.png" width="50" class="mb-3" />
             <h6 class="fw-bold">Noticias relevantes</h6>
             <img src="../../assets/img/noticias.png" width="50" />
+            <h6 class="fw-bold">Google Books</h6>
           </div>
         </div>
       </div>
