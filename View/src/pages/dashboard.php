@@ -2,8 +2,8 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard | EANet</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="../styles/dashboard.css">
   <link rel="icon" href="../../assets/img/logo.png" type="image/png">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </head>
 
 <body>
@@ -25,10 +24,13 @@
             <img src="../../assets/img/perfil.png" alt="Perfil" class="profile-img mb-2">
             <h5 id="nombreUsuario"></h5>
             <p id="acerca_de_ti"></p>
+            <img src="../../assets/img/perfil.png" alt="Foto de perfil" class="profile-img mb-2">
+            <h5>Pepito Perez</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <h6 class="fw-bold">Reconocimientos</h6>
             <div class="d-flex justify-content-center gap-2">
-              <img src="../../assets/img/thumbs.png" width="30" />
-              <img src="../../assets/img/medalla.png" width="30" />
+              <img src="../../assets/img/thumbs.png" width="30" alt="Pulgar arriba">
+              <img src="../../assets/img/medalla.png" width="30" alt="Medalla de reconocimiento">
             </div>
           </div>
         </div>
@@ -51,6 +53,9 @@
             <div class="card-body">
               <img src="../../assets/img/post.png" class="card-img-top" alt="Post">
               <div class="post-text text-center" id="acerca_de_ti_center">
+              <img src="../../assets/img/post.png" class="card-img-top" alt="Imagen de publicación">
+              <div class="post-text text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </div>
               <div class="icons">
                 <i class="bi bi-star"></i>
@@ -64,9 +69,10 @@
         <div class="col-md-3">
           <div class="sidebar p-3">
             <h6 class="fw-bold">Artículos académicos</h6>
-            <img src="../../assets/img/articulos.png" width="50" class="mb-3" />
+            <img src="../../assets/img/articulos.png" width="50" class="mb-3" alt="Ícono de artículos académicos">
             <h6 class="fw-bold">Noticias relevantes</h6>
-            <img src="../../assets/img/noticias.png" width="50" />
+            <img src="../../assets/img/noticias.png" width="50" alt="Ícono de noticias relevantes">
+            <h6 class="fw-bold">Google Books</h6>
           </div>
         </div>
       </div>
