@@ -6,11 +6,14 @@ async function getMail(query) {
     try {
         const response = await fetch(apiURL);
         if (!response.ok) {
+            alert(`Error en la solicitud: ${response.status}`);
             throw new Error(`Error en la solicitud: ${response.status}`);
         }
         const data = await response.json();
+        alert(`Api solicitada correctamente`);
         return data;        
     } catch (error) {
+        alert(`Error en la solicitud`);
         console.error("Error:", error);
         return null;
     }
@@ -22,11 +25,14 @@ async function getLibros(query) {
     try {
         const response = await fetch(apiURL);
         if (!response.ok) {
+            alert(`Error en la solicitud: ${response.status}`);
             throw new Error(`Error en la solicitud: ${response.status}`);
         }
         const data = await response.json();
+         alert(`Api solicitada correctamente`);
         return data;        
     } catch (error) {
+        alert(`Error en la solicitud`);
         console.error("Error:", error);
         return null;
     }
@@ -38,11 +44,14 @@ async function getYoutube(query) {
     try {
         const response = await fetch(apiURL);
         if (!response.ok) {
+            alert(`Error en la solicitud: ${response.status}`);
             throw new Error(`Error en la solicitud: ${response.status}`);
         }
         const data = await response.json();
+         alert(`Api solicitada correctamente`);
         return data;        
     } catch (error) {
+        alert(`Error en la solicitud`);
         console.error("Error:", error);
         return null;
     }
@@ -54,11 +63,14 @@ async function getCalendar(query) {
     try {
         const response = await fetch(apiURL);
         if (!response.ok) {
+            alert(`Error en la solicitud: ${response.status}`);
             throw new Error(`Error en la solicitud: ${response.status}`);
         }
         const data = await response.json();
+         alert(`Api solicitada correctamente`);
         return data;        
     } catch (error) {
+        alert(`Error en la solicitud`);
         console.error("Error:", error);
         return null;
     }

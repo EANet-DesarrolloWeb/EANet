@@ -7,7 +7,7 @@
   <title>Dashboard | EANet</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../styles/layout.css">
   <link rel="stylesheet" href="../styles/dashboard.css">
   <link rel="icon" href="../../assets/img/logo.png" type="image/png">
@@ -69,13 +69,17 @@
             <h6 class="fw-bold">Noticias relevantes</h6>
             <img src="../../assets/img/noticias.png" width="50" alt="Ícono de noticias relevantes">
             <h6 class="fw-bold">Visita tus sitios</h6>
-
+            <br>
             <div class="iconos">
-  <a href="#" onclick="getMail()" title="Email" style="color: rgb(0, 170, 255)"><i class="fas fa-envelope"></i></a>
-  <a href="#" onclick="getLibros()" title="Libros"><i class="fas fa-book" style="color: rgb(0, 255, 191)"></i></a>
-  <a href="#" onclick="getYoutube()" title="YouTube"><i class="fab fa-youtube" style="color: rgb(255, 0, 0)"></i></a>
-  <a href="#" onclick="getCalendar()" title="Calendario"><i class="fas fa-calendar-alt" style="color: rgb(0, 195, 255)" ></i></a>
-</div>
+              <a href="#" onclick="getYoutube()" title="YouTube"><i class="fab fa-youtube"
+                  style="color: rgb(255, 0, 0)"></i></a>
+              <a href="#" onclick="getMail()" title="Email" style="color: rgb(0, 170, 255)"><i
+                  class="fas fa-envelope"></i></a>
+              <a href="#" onclick="getLibros()" title="Libros"><i class="fas fa-book"
+                  style="color: rgb(0, 0, 0)"></i></a>
+              <a href="#" onclick="getCalendar()" title="Calendario"><i class="fas fa-calendar-alt"
+                  style="color: rgb(0, 0, 255)"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -86,6 +90,7 @@
 
   <script src="../scripts/include.js"></script>
   <script src="../scripts/userData.js"></script>
+  <script src="../scripts/apiRest.js"></script>
 
 </body>
 
