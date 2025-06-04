@@ -1,7 +1,7 @@
 const apiKey = "AIzaSyDR6GfAJvoF9eUBdZoGukIpCecEVpqdE4k"
 
 async function getMail(query) {
-    const apiURL = `https://`
+    const apiURL = `https://gmail.googleapis.com`;
 
     try {
         const response = await fetch(apiURL);
@@ -48,3 +48,18 @@ async function getYoutube(query) {
     }
 }
 
+async function getCalendar(query) {
+    const apiURL = `https://www.googleapis.com/ycalendar/v3` 
+
+    try {
+        const response = await fetch(apiURL);
+        if (!response.ok) {
+            throw new Error(`Error en la solicitud: ${response.status}`);
+        }
+        const data = await response.json();
+        return data;        
+    } catch (error) {
+        console.error("Error:", error);
+        return null;
+    }
+}
