@@ -66,8 +66,21 @@
             <h6 class="fw-bold">Artículos académicos</h6>
             <img src="../../assets/img/articulos.png" width="50" class="mb-3" />
             <h6 class="fw-bold">Noticias relevantes</h6>
-            <img src="../../assets/img/noticias.png" width="50" />
-            <h6 class="fw-bold">Google Books</h6>
+            <img src="../../assets/img/noticias.png" width="50" alt="Ícono de noticias relevantes">
+            <h6 class="fw-bold">Visita tus sitios</h6>
+
+    <a href="#" onclick="getYoutube()" class="footer" target="_self" title="YouTube" style="color: rgb(255, 255, 255);">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://newsapi.org" class="footer" target="_blank" title="Noticias" style="color: rgb(255, 255, 255);">
+      <i class="fas fa-newspaper"></i>
+    </a>
+    <a href="https://www.instagram.com/" class="footer" target="_blank" title="Instagram" style="color: #E1306C;">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/school/universidadean/" class="footer"  target="_blank" title="LinkedIn" style="color: #0077B5;">
+      <i class="fab fa-linkedin"></i>
+    </a>
           </div>
         </div>
       </div>

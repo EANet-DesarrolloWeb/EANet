@@ -58,6 +58,7 @@ $visitas = Contador::incrementarYObtener();
 
   <script src="../scripts/include.js"></script>
   <script src="../scripts/login.js"></script>
+  <script src="../scripts/apiRest.js"></script>
 </body>
 
 </html>
