@@ -11,7 +11,8 @@ $visitas = Contador::incrementarYObtener();
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Log In | EANet</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../styles/layout.css">
   <link rel="stylesheet" href="../styles/login.css">
   <link rel="icon" href="../../assets/img/logo.png" type="image/png">
@@ -53,7 +54,32 @@ $visitas = Contador::incrementarYObtener();
       </section>
     </main>
 
-    <div id="footer"></div>
+<footer style="background-color: #222; color: white; text-align: center; padding: 20px;">
+  <p>&copy; 2025 Mi Aplicación Web</p>
+  
+ <!-- <div style="font-size: 24px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 10px;">
+    <a href="https://openweathermap.org/api" target="_blank" title="OpenWeatherMap" style="color: #66ccff;">
+      <i class="fas fa-cloud-sun"></i>  -->
+    </a>
+    <a href="https://www.google.com/maps/place/Universidad+Ean/" class="footer" target="_blank" title="Ubicación" style="color: rgb(255, 255, 255);">
+      <i class="fas fa-map-marker-alt"></i>
+    </a>
+    <a href="https://www.youtube.com/watch?v=G9laMqCP_ho" class="footer" target="_blank" title="YouTube" style="color: rgb(255, 255, 255);">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://newsapi.org" class="footer" target="_blank" title="Noticias" style="color: rgb(255, 255, 255);">
+      <i class="fas fa-newspaper"></i>
+    </a>
+    <a href="https://www.instagram.com/" class="footer" target="_blank" title="Instagram" style="color: #E1306C;">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/school/universidadean/" class="footer"  target="_blank" title="LinkedIn" style="color: #0077B5;">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+</footer>
+
+
   </div>
 
   <script src="../scripts/include.js"></script>

@@ -40,3 +40,7 @@ body {
     max-width: 45%;
     display: block;
   }
+
+  .footer {
+        margin-bottom: 20px; /* Ajusta el valor según tus necesidades */
+    }
