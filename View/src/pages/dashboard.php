@@ -90,7 +90,7 @@
 
   <script src="../scripts/include.js"></script>
   <script src="../scripts/userData.js"></script>
-  <script src="../scripts/apiRest.js"></script>
+  <script src="../scripts/apiRest.js" defer></script>
 
 </body>
 
